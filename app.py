@@ -84,7 +84,7 @@ def main():
             data = {"features": features}  # Create a JSON payload with the features
 
             # Send a POST request to the prediction API
-            response = requests.post("http://localhost:5000/predict", json=data)
+            response = requests.post("https://flaskaa.pythonanywhere.com/predict", json=data)
 
             # Check if the request was successful (status code 200)
             if response.status_code == 200:
